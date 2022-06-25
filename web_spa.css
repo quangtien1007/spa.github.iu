@@ -14,7 +14,7 @@ body{
     color: black;
 }
 section.top-page{
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     
 }
@@ -28,9 +28,10 @@ section.top-page a.menu-items{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    margin: 20px;
+    margin: 10px;
     margin-top: auto;
     transition: 0.3s;
+    margin-right: 50px;
 }
 section.top-page a.menu-items:hover{
     color:cadetblue;
@@ -54,6 +55,9 @@ section.top-page a.login:hover{
 }
 section.main-page{
     text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.pic1{
     margin-top: 50px;
@@ -96,7 +100,8 @@ div.pic img:hover{
     padding-top: 15px;
 }
 div.booking{
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 div.booking a{
     font-weight: bold;
@@ -124,3 +129,65 @@ section.bottom-page a:hover{
     color:cadetblue;
     font-weight: bold;
 }
+table.booking{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.main-page .booking tr{
+    font-size: 16pt;
+}
+section.main-page form.resume{
+    margin-top: 80px;
+    margin-bottom: 80px;
+   border: 1px solid black;
+   width: 600px;
+   height: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+select.time{
+    width: 178px;
+}
+select.service{
+    width: 178px;
+}
+input[type="submit"]{
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    padding: 6px 10px;
+    transition: 0.3s;   
+    background-color: white;
+    font-size: 14pt;
+    font-family: 'Josefin Sans', sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: cadetblue;
+    color: white;
+}
+section.main-page h2{
+    text-align: center;
+}
+ul{
+  list-style: none;
+  text-align: center;
+  margin-right: 30px;
+}
+ul li{
+    font-size: 15pt;
+}
+section.title{
+    margin-top: 70px;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+}
+h3{
+    text-align: left;
+    font-size: 20pt;
+    margin-left: 50px;
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>She Beauty - Spa</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="web_spa.css">
+    </head> 
+    <body>
+        
+        <section class="top-page">
+            <a class="logo"><img src="shebeauty.png" width="150px"/></a>
+            <a class = "menu-items" href="index.html">Trang chủ</a>
+            <a class = "menu-items" href="service.html">Dịch vụ</a>
+            <a class = "menu-items" href="./">Liên hệ</a>
+            <a class = "login" href="./">Login</a>
+        </section>
+        <section class="main-page">
+            <form name="info" class="resume">
+                <table class="booking"> 
+                    <tr>
+                        <h2>Thông tin đặt lịch</h2>
+                        <td align="left">Họ tên</td>
+                        <td align="right"><input type="text" id="ten"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Số điện thoại</td>
+                        <td align="right"><input type="text" id="sdt"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Chọn dịch vụ</td>     
+                        <td align="right"><select class="service" id="service">
+                            <option id="1">Gội đầu thảo dược</option>
+                            <option id="2">Gội đầu thảo dược chuyên sâu</option>
+                            <option id="3">Chà gót chân</option>
+                            <option id="4">COMBO VIP 1</option>
+                            <option id="6">COMBO VIP 2</option>
+                            <option id="7">Liệu trình giảm béo</option>
+                            <option id="8">Tắm trắng body</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Giá dịch vụ</td>
+                        <td align="right"><input type="text" id="gia"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">Giờ</td>
+                        <td align="right"><select class="time" id="time" value=i>
+                            <script>                               
+                                    for(var i = 8; i <=19; i+=1/2)
+                                    {
+                                        var j = 0;
+                                        j++;
+                                        document.write("<option id="+j+">"+i+"</option>");
+                                    }                             
+                            </script>
+                        </select></td>
+                    </tr>
+                </table>
+                <tr></tr><br>
+                <tr></tr><br>
+                <tr>
+                    <input type="submit" name="xacnhan" value="Xác nhận" onclick="change_form()">
+                </tr>
+            </form>
+        </section>
+        <section class="bottom-page">
+            <a href="https://www.facebook.com/S-H-E-Beauty-G%E1%BB%99i-%C4%90%E1%BA%A7u-D%C6%B0%E1%BB%A1ng-Sinh-39k-100479969327062" target="_blank">Facebook</a>
+            <a href="./" target="_blank">Zalo</a>
+            <a href="./" target="_blank">Email</a>
+            <a href="./" target="_blank">Instagram</a>
+        </section>
+    </body>
+    <script>
+        function change_form()
+        {
+            var a = "info-booking.html";
+            if(info.ten.value == "" || info.sdt.value == ""|| info.ten.value == ""|| info.dichvu.value == ""|| info.gia.value == "" || info.gio.value == "")
+            {
+            alert("Vui lòng nhập đầy đủ thông tin");
+            }
+            else{
+                alert("Đã đặt lịch thành công");
+            }
+        }
+    </script>
+</html>
